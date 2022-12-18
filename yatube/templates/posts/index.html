@@ -1,9 +1,12 @@
 {% extends 'base.html' %}
+{% block title %}
+Последние обновления на сайте
+{% endblock %} 
 {% load static %}
 {% block content %}
       <!-- класс py-5 создает отступы сверху и снизу блока -->
       <div class="container py-5">     
-        <h1> {{ text }} </h1>
+        <h1> {{ title }} </h1>
         <article>
           {% for post in posts %}
           <ul>
